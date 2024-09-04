@@ -1,0 +1,110 @@
+//<INPUT>
+// Сніппет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+input{
+	color: var(--black);
+
+}
+input::placeholder{
+	color: #A2A5B1;
+}
+textarea.input {
+	resize: none;
+	// padding: 0px 0px;
+}
+.textarea{
+	resize: none;
+
+	outline: 1px solid #E2E2E2;
+    border-radius: toRem(12);
+	@include adaptiveValue("font-size", 20, 16);
+    line-height: 160%; /* 24/15 */
+
+	width: 100%;
+	padding: toRem(8) toRem(20);
+
+	background-color: var(--secondary);
+	transition: all .3s ease;
+
+}
+
+.textarea::placeholder{
+	color: var(--black);
+
+}
+
+.textarea:focus{
+	outline: 1px solid var(--blue);
+
+}
+
+.input {
+	width: 100%;
+	display: block;
+	outline: none;
+	font-size: toRem(15);
+	line-height: 160%; /* 24/15 */
+	background-color: transparent;
+	transition: all .3s ease;
+	&._form-focus {
+	}
+	&._form-error {
+	}
+}
+.input::placeholder{
+	color: #A2A5B1;
+}
+.input-main{
+	outline: 1px solid #E2E2E2;
+
+	height: toRem(55);
+    	display: flex;
+        align-items: center;
+        gap: toRem(15);
+        border-radius: toRem(12);
+		@include adaptiveValue("font-size", 20, 16);
+
+        line-height: 160%; /* 24/15 */
+
+        padding: toRem(8) toRem(20);
+        width: 100%;
+        background-color: var(--secondary);
+}
+.input-main::placeholder{
+	color: #A2A5B1;
+}
+.input-main:focus{
+
+	outline: 1px solid var(--blue);
+}
+
+
+
+.input[placeholder]:not([data-placeholder-nohiden]) {
+	&::placeholder {
+		transition: opacity 0.3s;
+	}
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+.textarea[placeholder]:not([data-placeholder-nohiden]) {
+	&::placeholder {
+		transition: opacity 0.3s;
+	}
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+.input-error{
+	outline: 1px solid #CB0000;
+}

@@ -1,0 +1,103 @@
+/* highlights */
+
+.highlights-main {
+    overflow-y: hidden;
+    .swiper-slide{
+        width: fit-content;
+    }
+    // .highlights-main__header
+    &__header {
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: toRem(22);
+        }
+    }
+    // .highlights-main__title
+    &__title {
+    }
+    &__body{
+        width: 100%;
+
+    }
+    // .highlights-main__content
+    &__content {
+        width: 100%;
+
+    }
+    &__wrapper{
+    }
+    // .highlights-main__item
+    &__item {
+    }
+}
+
+.item-highlights-main {
+    display: grid !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: toRem(5);
+    width: toRem(40);
+    @media (min-width:$mobileSmall){
+         width: toRem(105); 
+    }
+    // .item-highlights-main__image
+    &__image {
+        flex: 0 0 toRem(40);
+        width: toRem(40);
+        height: toRem(40);
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        @media (min-width:$mobileSmall){
+            flex: 0 0 toRem(75);
+            width: toRem(75);
+            height: toRem(75);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // .item-highlights-main__text
+    &__text {
+        font-size: toRem(10);
+        font-weight: 500;
+        max-width: toRem(75);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 171.428571%; /* 24/14 */
+        @media (min-width:$mobileSmall){
+            font-size: toRem(14);
+            max-width: toRem(105);
+              
+        }
+
+        
+    }
+}
+.item-highlights-main--new {
+    .item-highlights-main__image {
+        flex: 0 0 toRem(40);
+        width: toRem(40);
+        height: toRem(40);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px dashed var(--blue);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (min-width:$mobileSmall){
+            flex: 0 0 toRem(75);
+            width: toRem(75);
+            height: toRem(75);
+        }
+    }
+}

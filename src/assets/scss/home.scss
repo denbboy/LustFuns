@@ -1,0 +1,208 @@
+//====================================================================================================
+.page {
+    @include adaptiveValue("gap", 40, 20);
+
+}
+.page-main {
+    display: flex;
+    justify-content: space-between;
+    // padding-bottom: toRem(30);
+    padding-bottom: toRem(80);
+
+}
+
+
+//====================================================================================================
+.main__item{
+    width: 100%;
+    border-radius: toRem(16);
+    @include adaptiveValue("padding", 24, 16);
+    background-color: var(--white);
+}
+
+.main {
+    padding: toRem(15) 0;
+    width: 100%;
+    // .main__container
+    &__container {
+        display: grid;
+        gap: toRem(30);
+    }
+    &__item{
+        
+    }
+    // .main__new-post
+    &__new-post {
+    }
+    // .main__stories
+    &__stories {
+    }
+    // .main__highlights
+    &__highlights {
+    }
+    // .main__content
+    &__content {
+    }
+}
+//====================================================================================================
+
+.new-post-main {
+    // .new-post-main__body
+    &__body {
+        width: 100%;
+
+    }
+    // .new-post-main__content
+    &__content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: toRem(20);
+        &:not(:last-child) {
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: toRem(20);
+        }
+
+    }
+    // .new-post-main__image
+    &__image {
+    }
+    // .new-post-main__input
+    &__input {
+        @media (max-width:$mobile){
+             height: toRem(40); 
+        }
+    }
+    // .new-post-main__actions
+    &__actions {
+        padding-top: toRem(20);
+
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: toRem(25);
+    }
+    // .new-post-main__item
+    &__item {
+        flex: 0 0 toRem(24);
+        width: toRem(24);
+        height: toRem(24);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+//====================================================================================================
+
+.stories-main {
+    // .stories-main__content
+    &__content {
+        // max-width: toRem(300);
+        // display: grid;
+        // grid-template-columns: repeat(2,1fr);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: toRem(15);
+
+    }
+    &__item{
+        cursor: pointer;
+        background-color: var(--white);
+        border-radius: toRem(16);
+        overflow: hidden;
+        width: 100%;
+        
+        max-width: toRem(160);
+        height: toRem(235);
+        position: relative;
+       
+    }
+    // .stories-main__add-story
+    &__add-story {
+    }
+    // .stories-main__live
+    &__live {
+    }
+}
+.add-story {
+    // .add-story__image
+    &__image {
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // .add-story__text
+    &__text {
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        bottom: toRem(6);
+        left: 50%;
+        transform: translate(-50%,0);
+
+        display: flex;
+        font-size: toRem(18);
+        font-weight: 600;
+        text-align: center;
+        flex-direction: column;
+        gap: toRem(3);
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-wrap: nowrap;
+        line-height: 24px;
+    }
+}
+.live-stories-main {
+    // .live-stories-main__text
+    &__text {
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        display: flex;
+        font-size: toRem(18);
+        font-weight: 600;
+        text-align: center;
+        flex-direction: column;
+        gap: toRem(3);
+        align-items: center;
+        justify-content: center;
+        color: var(--black);
+        text-wrap: nowrap;
+        line-height: 24px;
+    }
+}
+
+
+//====================================================================================================
+
+
+
+//====================================================================================================
+
+.content-main {
+    display: grid;
+    gap: toRem(35);
+    // .content-main__post
+    &__post {
+    }
+}
+
+
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================

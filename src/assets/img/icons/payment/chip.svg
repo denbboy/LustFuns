@@ -1,0 +1,14 @@
+<svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.318939" y="0.407227" width="27.7989" height="18.5326" rx="4.21196" fill="url(#paint0_radial_174_5693)" style=""/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2141 0.59082L11.1254 5.43401C11.1254 5.43401 12.3609 9.6718 11.1254 13.3042L14.2141 18.7528L17.3029 13.3042C17.3029 13.3042 16.0674 10.2772 17.3029 5.43401C17.3029 5.43401 14.2141 0.59082 14.2141 0.59082Z" stroke="#C7C7B6" style="stroke:#C7C7B6;stroke:color(display-p3 0.7821 0.7821 0.7151);stroke-opacity:1;" stroke-width="1.09511" stroke-linejoin="bevel"/>
+<path d="M0.318565 5.65653H11.1293" stroke="#C7C7B6" style="stroke:#C7C7B6;stroke:color(display-p3 0.7821 0.7821 0.7151);stroke-opacity:1;" stroke-width="1.09511" stroke-linejoin="bevel"/>
+<path d="M16.9952 5.65653H28.1147" stroke="#C7C7B6" style="stroke:#C7C7B6;stroke:color(display-p3 0.7821 0.7821 0.7151);stroke-opacity:1;" stroke-width="1.09511" stroke-linejoin="bevel"/>
+<path d="M0.318565 13.0691H11.1293" stroke="#C7C7B6" style="stroke:#C7C7B6;stroke:color(display-p3 0.7821 0.7821 0.7151);stroke-opacity:1;" stroke-width="1.09511" stroke-linejoin="bevel"/>
+<path d="M16.9952 13.0691H28.1147" stroke="#C7C7B6" style="stroke:#C7C7B6;stroke:color(display-p3 0.7821 0.7821 0.7151);stroke-opacity:1;" stroke-width="1.09511" stroke-linejoin="bevel"/>
+<defs>
+<radialGradient id="paint0_radial_174_5693" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.2825 7.15803) rotate(141.302) scale(18.8443 18.7014)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="1" stop-color="#DDDCDA" style="stop-color:#DDDCDA;stop-color:color(display-p3 0.8663 0.8637 0.8534);stop-opacity:1;"/>
+</radialGradient>
+</defs>
+</svg>

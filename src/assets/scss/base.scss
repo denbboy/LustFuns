@@ -1,0 +1,93 @@
+// Загальний файл елементів форм
+// Для підключення/відключення стилів конкретного елемента форми дивись base/forms/forms.scss
+@import "base/forms/forms";
+
+// Стилі меню + бургер
+// @import "base/menu";
+
+// Стилі попапів
+@import "base/popup";
+
+// Стилі спойлерів
+// @import "base/spollers";
+
+// Стилі табів
+// @import "base/tabs";
+
+// Стилі мап
+// @import "base/maps";
+
+// Стилі блоку "показати ще"
+@import "base/showmore";
+
+// Стилі для липкого блоку
+// @import "base/sticky";
+
+// Стилі для повноекранного блоку
+// @import "base/fullscreen";
+
+// Стилі для поекраної прокрутки
+// Styles for fullpage scroll
+// @import "base/fullpage";
+
+// Стилі для ripple ефекту
+// Styles for ripple effect
+// @import "base/ripple";
+
+// Стилі для кастомного курсору
+// Styles for custom cursor
+// @import "base/cursor";
+
+// Стилі для чуйних зображеннь (IBG)
+// Сніппет (HTML): ibg (зображення з класами)
+// Сніппет (HTML): ibga (a з зображенням та класами)
+.ibg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	&--top {
+		object-position: top;
+	}
+	&--bottom {
+		object-position: bottom;
+	}
+	&--left {
+		object-position: left;
+	}
+	&--right {
+		object-position: right;
+	}
+	&--contain {
+		object-fit: contain;
+	}
+}
+
+
+/* style from animation routes */
+
+.fade-enter-active,
+.fade-enter {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fade-exit {
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.fade-enter-done {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+
+// style from opacity
+
+.sr-only{
+	opacity: 0;
+	visibility: hidden;
+}

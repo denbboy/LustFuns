@@ -1,0 +1,34 @@
+// ===============
+// colors palette
+// ===============
+:root {
+	// Site colors (Кольори сайту):
+	// =================================================================
+	--white: #FFFFFF; // Site main color - (Основний колір сайту)
+	--secondary: #F7F7F7; // Site secondary color - (Додатковий колір сайту)
+	--border: #E2E2E2;
+	--grey: #6F767E; 
+	--blue: #3F79CF;
+	--dark: #202226;
+	--light-blue: #ECF2FB;
+	--blue-transparent: rgba(63, 121, 207, 0.15);
+	--black: #000;
+	--green: #29CE69;
+
+	--btn-dark-blue: #153C76;
+	// =================================================================
+
+}
+
+.dark{
+	--white: #242424; // Site main color - (Основний колір сайту)
+	--secondary: #121212; // Site secondary color - (Додатковий колір сайту)
+	--black: #fff;
+	
+	.rdw-editor-toolbar{
+		img{
+			filter: invert(1);
+		}
+	}
+	
+}
