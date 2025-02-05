@@ -3,8 +3,8 @@ import GoogleIc from '../../../assets/img/icons/google.svg';
 import AppleIc from '../../../assets/img/icons/apple.svg';
 import FacebookIc from '../../../assets/img/icons/facebook.svg';
 
-import { GoogleLogin } from '@react-oauth/google'
-import FacebookLogin from 'react-facebook-login';
+//import { GoogleLogin } from '@react-oauth/google'
+//import FacebookLogin from 'react-facebook-login';
 import AppleSignin from 'react-apple-signin-auth';
 
 
@@ -30,12 +30,6 @@ export const LoginSocial = () => {
                 </div>
                 <p className="item-socials-main-registration__text">Google</p>
                 <div className='auth'>
-                    <GoogleLogin
-                        onSuccess={responseGoogle}
-                        onError={() => {
-                            console.log('Login Failed');
-                        }}
-                    />;
                 </div>
             </button>
 
@@ -70,13 +64,6 @@ export const LoginSocial = () => {
                 </div>
                 <p className="item-socials-main-registration__text">Facebook</p>
                 <div className="auth">
-                    <FacebookLogin
-                    appId="YOUR_FACEBOOK_APP_ID"
-                        autoLoad={false}
-                        fields="name,email,picture"
-                        callback={responseFacebook}
-                        icon="fa-facebook"
-                    />,
                 </div>
             </button>
         </div>

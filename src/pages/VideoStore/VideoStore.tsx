@@ -86,7 +86,7 @@ export const VideoStore = () => {
     const [paginatePage, setPaginatePage] = useState(1)
     const [isOpenSelect, setIsOpenSelect] = useState(false)
 
-    const buttonFilter: any = useRef()
+    const buttonFilter: any = useRef(null)
 
     const { rootEl } = useClickOutside(setIsOpenFilter, null, [buttonFilter.current])
     const select = useClickOutside(setIsOpenSelect)
